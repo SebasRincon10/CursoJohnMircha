@@ -1,0 +1,107 @@
+/*
+Estilos de la Fuente
+font-family
+font-size
+font-weight
+font-style
+font-variant
+font
+line-height
+*/
+
+.font {
+  font-family:  sans-serif;
+  font-family: cursive;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: oblique;
+  font-variant: small-caps;
+  line-height: 2;
+  font: italic small-caps 100 16px / 1.5 sans-serif;
+}
+
+/*Formato WOFF o WOFF2 - WEB OPENT FONT FORMAT
+
+font-display:
+  auto - permite que el navegador utilice el método predeterminado que sueles ser block
+  block - oculta brevemente el texto hasta que la fuente haya sido descargada por completo
+  swap - indica al navegador que utilice la fuente alternativa para mostrar el texto hasta que la fuente personalizada se haya cargado por completo
+  fallback - es una mezcla de auto y swap
+  optional - ocultará el texto, luego lo cargará con la fuente alternativa y finalmente aplicará la fuente personalizada*/
+
+@font-face {
+  font-family: "Chalet";
+  src: url("../assets/Chalet.woff") format("woff");
+  font-display: swap;
+}
+
+.chalet{
+  font-family: "Chalet",sans-serif;
+  font-size: 2rem;
+}
+
+@font-face {
+  font-family: "Peccita";
+  src: url("../assets/Pecita.woff") format("woff");
+  font-display: swap;
+}
+
+.peccita {
+  font-family: "Peccita", monospace;
+  font-size: 2rem;
+}
+
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
+text align
+text-decoration
+text-indent
+text-overflow
+  overflow:hidden;
+  white-space:nowrap;
+text-transform
+
+letter-spacing
+white-space
+
+word-break
+word-spacing
+writing-mode
+*/
+
+.text {
+
+  font-size: 1.5rem;
+  text-align: left;
+  text-decoration:underline;
+  text-indent: 3rem;
+  text-transform: capitalize;
+  letter-spacing: 1rem;
+  word-break: break-all;
+  writing-mode: vertical-rl;
+  
+}
+
+.text-overflow{
+  font-size: 2rem;
+  background-color: blanchedalmond;
+  border: thin solid black;
+  padding: 1rem;
+  width: 50%;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+
+.word-spacing {
+  font-size: 2rem;
+  word-spacing: 1.5rem;
+
+}
+
+
